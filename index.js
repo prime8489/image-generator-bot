@@ -3,9 +3,9 @@ const axios = require("axios");
 const TelegramBot = require("node-telegram-bot-api");
 const fetch = require("node-fetch");
 
-const token = "BOT_TOKEN";
-const admin = "USERID";
-const DATABASE_URL = "DATABASE_URL"; 
+const token = "7925723538:AAE83PmV4bdO6uuoO9gAPSoXoKY24O81070";
+const admin = "5708790879";
+const DATABASE_URL = "https://image-generator-feff4-default-rtdb.firebaseio.com"; 
 const WEBHOOK_URL = "VERCEL_URL";
 
 const bot = new TelegramBot(token, { webHook: { port: false } });
