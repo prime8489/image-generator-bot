@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 const token = "7925723538:AAE83PmV4bdO6uuoO9gAPSoXoKY24O81070";
 const admin = "5708790879";
 const DATABASE_URL = "https://image-generator-feff4-default-rtdb.firebaseio.com"; 
-const WEBHOOK_URL = "VERCEL_URL";
+const WEBHOOK_URL = "https://image-generator-bot-theta.vercel.app/";
 
 const bot = new TelegramBot(token, { webHook: { port: false } });
 const app = express();
@@ -118,11 +118,11 @@ app.post("/", async (req, res) => {
       const caption =
         "*👆 Here Is Your Generated Image\n\n💭 Your Prompt:*\n`" +
         msg.text +
-        "`\n\n*🧑‍💻 Created By:* [BOTNAME](https://telegram.dog/BOT_USERNAME)";
+        "`\n\n*🧑‍💻 Created By:* [BOTNAME](https://telegram.dog/image_generatorby_bot)";
       const keyboard = {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/DEVELOPER" }]
+            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/recoodex" }]
           ]
         },
         parse_mode: "Markdown",
